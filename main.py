@@ -15,7 +15,7 @@ def check_link(message):
     url = text.split()[0]
     try:
         name, dl, size = get_mega_info(url)
-        response = f"*Name:* `{name}`\n*Size:* `{size}`\n*Ditect Link:* ```{dl}```"
+        response = f"*Name:* `{name}`\n*Size:* `{size}`\n*Direct Link:* ```{dl}```"
         bot.reply_to(message, response, parse_mode="Markdown")
     except Exception as e:
         response = f"An error occurred while processing the URL: {str(e)}"
