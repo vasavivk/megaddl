@@ -11,7 +11,7 @@ def size(num, suffix='B'):
     magnitude = int(floor(log(num, 1024)))
     val = num / pow(1024, magnitude)
     return '{:3.1f} {}{}'.format(val, ['', ' K', 'M', 'G', 'T'][magnitude], suffix)
-
+# pattern = r"(folder|file)/(.+?)#([^\s]+)"
 def makebyte(x):
     return codecs.latin_1_encode(x)[0]
 
