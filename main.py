@@ -2,7 +2,7 @@ import telebot
 import re
 from mega_info_api import get_mega_info
 
-bot = telebot.TeleBot('6450639403:AAFgYcw01RDsEH-A2kRM4Q_Th0-RXqtJUVQ')
+bot = telebot.TeleBot('6758173151:AAEegtw0vVKDFmQZry166d_GketQvx-rA1o')
 
 @bot.message_handler(commands=['start'])
 def start(message):
